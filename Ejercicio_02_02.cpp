@@ -7,12 +7,12 @@
 using namespace std;
 int main() 
 {
-    double cateto1, cateto2;
-    cout << "Introduce la longitud del primer cateto: ";
-    cin >> cateto1;
-    cout << "Introduce la longitud del segundo cateto: ";
-    cin >> cateto2;
-    double hipotenusa = sqrt(cateto1 * cateto1 + cateto2 * cateto2);
-    cout << "La longitud de la hipotenusa es: " << hipotenusa << endl;
-    return 0;
+    int segundos;
+    cout << "Ingrese la cantidad de segundos: ";
+    cin >> segundos;
+    int horas = segundos / 3600;
+    int minutos = (segundos % 3600) / 60;
+    int segRestantes = segundos % 60;
+    cout << "Horas: " << horas << ", Minutos: " << minutos << ", Segundos: " << segRestantes << endl;
+return 0;
 }
